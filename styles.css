@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.navbar {
+  justify-content: space-around;
+  color: #2c2c2c;
+  background-color: #f4efec;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar img {
+  width: 46px;
+  height: 22.91px;
+}
+
+.options {
+  width: 70%;
+}
+
+.options ul {
+  justify-content: space-between;
+  list-style: none;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.options ul li {
+  padding: 12px;
+  cursor: pointer;
+}
+
+.icons {
+  width: 70px;
+  justify-content: space-between;
+}
+
+.icons img {
+  color: #2c2c2c;
+  height: 20px;
+  width: 20px;
+}
+
+.bigImage {
+  color: white;
+  height: 631px;
+
+  /* width: max-content; */
+  width: 100vw;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.bigImage div {
+  background-size: cover;
+  background-image: url("./resources/background.png");
+  background-repeat: repeat;
+  height: 100%;
+  /* width: 100%; */
+}
+
+.font-1 {
+  font-size: 66px;
+}
+
+.font-2 {
+  font-size: 33px;
+}
+
+.section3 {
+  width: 90%;
+  /* justify-content: space-between; */
+  margin: auto;
+}
+
+.saralImg {
+  width: 660px;
+  height: 650px;
+}
+
+.saralImg img {
+  height: 100%;
+  width: 100%;
+}
+
+.shopByRoom {
+  text-align: left;
+}
+
+.shopByRoom b {
+  font-size: 50px;
+}
+
+.categories,
+hr {
+  color: #2c2c2c;
+}
+
+.heading-2 {
+  font-size: 24px !important;
+}
