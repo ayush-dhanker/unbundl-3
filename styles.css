@@ -23,6 +23,7 @@
 
 .options {
   width: 70%;
+  display: none;
 }
 
 .options ul {
@@ -48,22 +49,28 @@
   width: 20px;
 }
 
+#menuBtn {
+  height: 20px;
+  width: 20px;
+}
+
 .bigImage {
   color: white;
-  height: 631px;
+  height: 630px;
+  /* background-size: con */
 
   /* width: max-content; */
-  width: 100vw;
+  width: 100%;
   margin-bottom: 2rem;
   position: relative;
 }
 
 .bigImage div {
-  background-size: cover;
   background-image: url("./resources/background.png");
   background-repeat: repeat;
   height: 100%;
-  /* width: 100%; */
+  background-size: contain;
+  resize: both;
 }
 
 .font-1 {
@@ -75,14 +82,13 @@
 }
 
 .section3 {
-  width: 90%;
-  /* justify-content: space-between; */
+  width: 100%;
+  flex-direction: column;
   margin: auto;
 }
 
 .saralImg {
-  width: 660px;
-  height: 650px;
+  width: 100%;
 }
 
 .saralImg img {
@@ -91,6 +97,7 @@
 }
 
 .shopByRoom {
+  width: 100%;
   text-align: left;
 }
 
@@ -98,11 +105,111 @@
   font-size: 50px;
 }
 
-.categories,
-hr {
+.categories {
   color: #2c2c2c;
+  margin-top: 1rem;
+}
+
+.categories div {
+  width: 240px;
+  margin-top: 3rem;
 }
 
 .heading-2 {
   font-size: 24px !important;
+}
+
+.sub-heading,
+hr {
+  color: black;
+}
+
+hr {
+  margin-top: 10px;
+}
+
+.section-4 {
+  background-color: black;
+  color: white;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  flex-direction: row-reverse;
+  margin-top: 2rem;
+}
+
+.section-4 div {
+  position: absolute;
+  width: 300px;
+  font-weight: 600;
+  left: 3%;
+}
+
+.section-4 img {
+  background-size: contain;
+  height: 858px;
+}
+
+.heading-3 {
+  font-size: 43px;
+}
+
+.sub-heading-2 {
+  opacity: 0.6;
+  font-size: 24px;
+  font-weight: 100;
+  margin-top: 36px;
+  background-color: black;
+}
+
+.bttn-2 {
+  margin-top: 36px;
+  padding: 13px 35px;
+  font-size: 24px;
+  border-radius: 36px;
+  background-color: #ffcc48;
+  color: #2c2c2c;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.bttn-2:hover {
+  background-color: #ffcb48ce;
+}
+
+@media (min-width: 600px) {
+  .sub-heading-2 {
+    opacity: 0.8;
+    background-color: transparent;
+  }
+
+  .options {
+    display: block;
+  }
+
+  #menuBtn {
+    display: none;
+  }
+}
+
+@media (min-width: 1100px) {
+  .section3 {
+    width: 90%;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .saralImg {
+    width: 50%;
+  }
+
+  .shopByRoom {
+    width: 45%;
+  }
+}
+
+@media (min-width: 444px) {
+  .section-4 div {
+    width: 427px;
+  }
 }
